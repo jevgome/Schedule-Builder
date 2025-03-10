@@ -1,0 +1,13 @@
+# Directories
+archive/
+dist/
+test/
+node_modules/
+
+# Files
+.DS_Store
+classrooms-*.json
+courses-*.json
+rmpIds-*.json
+*.tgz
+*.test.ts

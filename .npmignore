@@ -1,0 +1,14 @@
+# Directories
+test/
+.assets/
+.github/
+.vscode/
+node_modules/
+
+# Files
+README.md
+rmpIds-*.json
+courses-*.json
+classrooms-*.json
+*.test.ts
+*.tgz
