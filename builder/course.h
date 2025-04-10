@@ -27,8 +27,6 @@ typedef struct course_list_tag {
     course *courses;
 } course_list;
 
-int time_to_int(const char* time);
-
 block create_block(char* section, char* start_time, char* end_time, days day, char* location, char* instructors);
 
 course create_course(int id, char* subject, char* catalog, block* blocks, int n_b);

@@ -32,13 +32,14 @@ entry_list *parse_file(char *filename) {
         entry new_entry;
         for(int j = 0; j < 18; j++) {
             fgets(line, 100, file);
+            line[strcspn(line, "\n\r")] = '\0';
             switch(j) {
-                case 0: new_entry.id = (line == " " ? 0 : atoi(line)); break;
+                case 0: new_entry.id = (!strcmp(line, " ") ? 0 : atoi(line)); break;
                 case 1: copy_fit(new_entry.subject, line); break;
                 case 2: copy_fit(new_entry.catalog, line); break;
                 case 3: copy_fit(new_entry.section, line); break;
                 case 4: copy_fit(new_entry.career, line); break;
-                case 5: new_entry.credits = (line == " " ? 0 : atoi(line)); break;
+                case 5: new_entry.credits = (!strcmp(line, " ") ? 0 : atoi(line)); break;
                 case 6: copy_fit(new_entry.campus, line); break;
                 case 7: copy_fit(new_entry.session, line); break;
                 case 8: copy_fit(new_entry.description, line); break;

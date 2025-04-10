@@ -5,12 +5,13 @@
 #include "course.h"
 
 int main() {
-    entry_list *e_list = parse_file("data.txt");
+    entry_list *e_list = parse_file("../data.txt");
     course_list *c_list = parse_entries(e_list);
 
     for(int i = 0; i < c_list->n_courses; i++) {
-        print_course(&c_list->courses[i]);
+        // print_course(&c_list->courses[i]);
     }
+    // printf("\n");
 
     for(int i = 0; i < c_list->n_courses; i++) 
         free(c_list->courses[i].blocks);

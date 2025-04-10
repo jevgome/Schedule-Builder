@@ -1,0 +1,2 @@
+- Add comments to all functions
+-Work on print_schedule

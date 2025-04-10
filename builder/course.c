@@ -6,28 +6,6 @@
 #include "input.h"
 #include "course.h"
 
-int time_to_int(const char* time) {
-    char hour[3];
-    char minute[3];
-    int i = 0;
-    while(time[i] != ':') {
-        hour[i] = time[i];
-        i++;
-    }
-    hour[i] = '\0';
-    i++;
-    int j = 0;
-    while(i < strlen(time) - 2) {
-        minute[j] = time[i];
-        i++;
-        j++;
-    }
-    minute[j] = '\0';
-
-    return (atoi(hour) + (time[i] == 'P' && atoi(hour) != 12 ? 12 : 0)) * 60 + atoi(minute);
-
-}
-
 block create_block(char* section, char* start_time, char* end_time, days day, char* location, char* instructors) {
     block new_block;
     new_block.section = section;
@@ -196,7 +174,7 @@ course_list *parse_entries(entry_list *e_list) {
                 i++;
             }
         } else {
-            if(e_list->entries[curr_entry].req_add != " "){
+            if(strcmp(e_list->entries[curr_entry].req_add, " ")){
                 curr_block = cb;
             }
             parse_hdl(e_list->entries[curr_entry].hdl, start_time, end_time, d, location);
