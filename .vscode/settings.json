@@ -2,6 +2,7 @@
     "files.associations": {
         "string.h": "c",
         "input.h": "c",
-        "course.h": "c"
+        "course.h": "c",
+        "xpath.h": "c"
     }
 }

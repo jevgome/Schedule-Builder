@@ -1,0 +1,14 @@
+# ninja log v5
+2	83	1744333191992039526	CMakeFiles/Schedule-Builder.dir/builder/course.c.o	d22278622080ba19
+3	67	1744333191972039701	CMakeFiles/Schedule-Builder.dir/builder/schedule.c.o	143cdd6d541e816
+1	99	1744345652669600389	CMakeFiles/Schedule-Builder.dir/input/scraper.c.o	35996854a9b21a62
+2	67	1744333191972039701	CMakeFiles/Schedule-Builder.dir/builder/input.c.o	5089cd67e04b9197
+99	817	1744345653374452212	Schedule-Builder	50c491ca4415548
+1	67	1744345652629830832	CMakeFiles/Schedule-Builder.dir/main.c.o	41f9da790f88bd84
+0	360	1744345891363579680	build.ninja	9ecddc59bf8c61ef
+1	145	1744346341976828417	CMakeFiles/Schedule-Builder.dir/input/input.c.o	a1066f84b8f5476b
+0	145	1744346341976828417	CMakeFiles/Schedule-Builder.dir/main.c.o	41f9da790f88bd84
+4	146	1744346341976828417	CMakeFiles/Schedule-Builder.dir/builder/course.c.o	d22278622080ba19
+4	146	1744346341976828417	CMakeFiles/Schedule-Builder.dir/builder/schedule.c.o	143cdd6d541e816
+2	159	1744346341996820811	CMakeFiles/Schedule-Builder.dir/input/scraper.c.o	35996854a9b21a62
+160	1160	1744346342985728290	Schedule-Builder	5c169c16e2745539

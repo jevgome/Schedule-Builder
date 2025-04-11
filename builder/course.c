@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "input.h"
+#include "../input/input.h"
 #include "course.h"
 
 block create_block(char* section, char* start_time, char* end_time, days day, char* location, char* instructors) {

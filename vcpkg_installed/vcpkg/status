@@ -1,0 +1,119 @@
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-linux
+Multi-Arch: same
+Abi: e4edddf5f044dbe159a1d21ecaca79b4bd69195ac3341b7f2d15fb320b605954
+Status: install ok installed
+
+Package: vcpkg-cmake-get-vars
+Version: 2024-09-22
+Depends: vcpkg-cmake
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 0739de6a1467fbab7be30eb730e63a658219abac8f92513d651c9d62bae4368e
+Status: install ok installed
+
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 6fbd90049de1389dfdbe4e365810aebd87db5f7afefd34aaf621f0e4b7884d42
+Status: install ok installed
+
+Package: openssl
+Version: 3.5.0
+Depends: vcpkg-cmake, vcpkg-cmake-config, vcpkg-cmake-get-vars
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 7a97b6b30e76f1679d985a0f2f19c1997fe7c5de1b30d66ac3e5fab8fbbfe9b2
+Description: OpenSSL is an open source project that provides a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols. It is also a general-purpose cryptography library.
+Status: install ok installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 1a5cd0945db8fb76fcb2b04930808d33d6e9c2507c458e479575dfb7798fbb1f
+Description: A compression library
+Status: install ok installed
+
+Package: libiconv
+Version: 1.18
+Port-Version: 1
+Architecture: x64-linux
+Multi-Arch: same
+Abi: c79b85f9a5463fe50e20260cdf3d7ea7c1404d786b8ee4aa7ce28c8655cd4701
+Description: iconv() text conversion.
+    This port installs GNU libiconv if the system C runtime doesn't provide a suitable iconv() implementation.
+Status: install ok installed
+
+Package: libxml2
+Version: 2.13.5
+Port-Version: 2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: c81dfffe89484d48b6f40533ad8c44026f51212e780b664377d5f828b98be7ab
+Description: Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform).
+Default-Features: iconv, zlib
+Status: install ok installed
+
+Package: libxml2
+Feature: iconv
+Depends: libiconv
+Architecture: x64-linux
+Multi-Arch: same
+Description: Add ICONV support
+Status: install ok installed
+
+Package: libxml2
+Feature: zlib
+Depends: zlib
+Architecture: x64-linux
+Multi-Arch: same
+Description: Use ZLib
+Status: install ok installed
+
+Package: curl
+Version: 8.13.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-linux
+Multi-Arch: same
+Abi: b4018ae62679f37ece5bc56391a807d143d9b92f7e29f5d3532d66e947839a86
+Description: A library for transferring data with URLs
+Default-Features: non-http, ssl
+Status: install ok installed
+
+Package: curl
+Feature: non-http
+Architecture: x64-linux
+Multi-Arch: same
+Description: Enables protocols beyond HTTP/HTTPS/HTTP2
+Status: install ok installed
+
+Package: curl
+Feature: openssl
+Depends: openssl
+Architecture: x64-linux
+Multi-Arch: same
+Description: SSL support (OpenSSL)
+Status: install ok installed
+
+Package: curl
+Feature: ssl
+Architecture: x64-linux
+Multi-Arch: same
+Description: Default SSL backend
+Status: install ok installed
+
+Package: json-c
+Version: 0.18-20240915
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 71d56830c410f269370269702cad7a5e95a484959fbfedc8ea421d621b5127f3
+Description: A JSON implementation in C
+Status: install ok installed
+

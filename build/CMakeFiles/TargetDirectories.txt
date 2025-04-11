@@ -1,0 +1,3 @@
+/home/jevgome/Schedule-Builder/build/CMakeFiles/Schedule-Builder.dir
+/home/jevgome/Schedule-Builder/build/CMakeFiles/edit_cache.dir
+/home/jevgome/Schedule-Builder/build/CMakeFiles/rebuild_cache.dir

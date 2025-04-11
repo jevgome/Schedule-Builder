@@ -1,0 +1,7 @@
+{
+  "dependencies": [
+    "curl",
+    "libxml2",
+    "json-c"
+  ]
+}

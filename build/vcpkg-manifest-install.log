@@ -1,0 +1,25 @@
+Detecting compiler hash for triplet x64-linux...
+Compiler found: /usr/bin/c++
+All requested packages are currently installed.
+Total install time: 195 us
+curl is compatible with built-in CMake targets:
+
+    find_package(CURL REQUIRED)
+    target_link_libraries(main PRIVATE CURL::libcurl)
+
+json-c provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(json-c CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE json-c::json-c)
+
+json-c provides pkg-config modules:
+
+  # A JSON implementation in C
+  json-c
+
+The package libxml2 is compatible with built-in CMake targets:
+
+    find_package(LibXml2 REQUIRED)
+    target_link_libraries(main PRIVATE LibXml2::LibXml2)
+

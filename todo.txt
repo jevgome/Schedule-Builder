@@ -1,2 +1,13 @@
+ALL
 - Add comments to all functions
--Work on print_schedule
+
+INPUT
+- Parse JSON
+- Pipe scraper->input
+
+BUILDER
+- Pipe input->course->schedule
+
+OUTPUT
+- Work on print_schedule
+- Learn OpenGL
