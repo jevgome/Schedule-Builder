@@ -10,10 +10,7 @@ find_package(json-c CONFIG REQUIRED)
 add_executable(
     Schedule-Builder 
     main.c 
-    input/input.c input/input.h 
     input/scraper.c input/scraper.h 
-    builder/course.c builder/course.h 
-    builder/schedule.c builder/schedule.h
     )
 
 target_link_libraries(Schedule-Builder PRIVATE CURL::libcurl)

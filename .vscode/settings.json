@@ -3,6 +3,11 @@
         "string.h": "c",
         "input.h": "c",
         "course.h": "c",
-        "xpath.h": "c"
+        "xpath.h": "c",
+        "scraper.h": "c",
+        "stdio.h": "c",
+        "curl.h": "c",
+        "stdlib.h": "c",
+        "json.h": "c"
     }
 }

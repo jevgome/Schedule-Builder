@@ -51,33 +51,12 @@ build CMakeFiles/Schedule-Builder.dir/main.c.o: C_COMPILER__Schedule-Builder_ /h
   OBJECT_DIR = CMakeFiles/Schedule-Builder.dir
   OBJECT_FILE_DIR = CMakeFiles/Schedule-Builder.dir
 
-build CMakeFiles/Schedule-Builder.dir/input/input.c.o: C_COMPILER__Schedule-Builder_ /home/jevgome/Schedule-Builder/input/input.c || cmake_object_order_depends_target_Schedule-Builder
-  DEFINES = -DCURL_STATICLIB -DLIBXML_STATIC
-  DEP_FILE = CMakeFiles/Schedule-Builder.dir/input/input.c.o.d
-  INCLUDES = -isystem /home/jevgome/Schedule-Builder/build/vcpkg_installed/x64-linux/include -isystem /home/jevgome/Schedule-Builder/build/vcpkg_installed/x64-linux/include/libxml2 -isystem /home/jevgome/Schedule-Builder/build/vcpkg_installed/x64-linux/include/json-c
-  OBJECT_DIR = CMakeFiles/Schedule-Builder.dir
-  OBJECT_FILE_DIR = CMakeFiles/Schedule-Builder.dir/input
-
 build CMakeFiles/Schedule-Builder.dir/input/scraper.c.o: C_COMPILER__Schedule-Builder_ /home/jevgome/Schedule-Builder/input/scraper.c || cmake_object_order_depends_target_Schedule-Builder
   DEFINES = -DCURL_STATICLIB -DLIBXML_STATIC
   DEP_FILE = CMakeFiles/Schedule-Builder.dir/input/scraper.c.o.d
   INCLUDES = -isystem /home/jevgome/Schedule-Builder/build/vcpkg_installed/x64-linux/include -isystem /home/jevgome/Schedule-Builder/build/vcpkg_installed/x64-linux/include/libxml2 -isystem /home/jevgome/Schedule-Builder/build/vcpkg_installed/x64-linux/include/json-c
   OBJECT_DIR = CMakeFiles/Schedule-Builder.dir
   OBJECT_FILE_DIR = CMakeFiles/Schedule-Builder.dir/input
-
-build CMakeFiles/Schedule-Builder.dir/builder/course.c.o: C_COMPILER__Schedule-Builder_ /home/jevgome/Schedule-Builder/builder/course.c || cmake_object_order_depends_target_Schedule-Builder
-  DEFINES = -DCURL_STATICLIB -DLIBXML_STATIC
-  DEP_FILE = CMakeFiles/Schedule-Builder.dir/builder/course.c.o.d
-  INCLUDES = -isystem /home/jevgome/Schedule-Builder/build/vcpkg_installed/x64-linux/include -isystem /home/jevgome/Schedule-Builder/build/vcpkg_installed/x64-linux/include/libxml2 -isystem /home/jevgome/Schedule-Builder/build/vcpkg_installed/x64-linux/include/json-c
-  OBJECT_DIR = CMakeFiles/Schedule-Builder.dir
-  OBJECT_FILE_DIR = CMakeFiles/Schedule-Builder.dir/builder
-
-build CMakeFiles/Schedule-Builder.dir/builder/schedule.c.o: C_COMPILER__Schedule-Builder_ /home/jevgome/Schedule-Builder/builder/schedule.c || cmake_object_order_depends_target_Schedule-Builder
-  DEFINES = -DCURL_STATICLIB -DLIBXML_STATIC
-  DEP_FILE = CMakeFiles/Schedule-Builder.dir/builder/schedule.c.o.d
-  INCLUDES = -isystem /home/jevgome/Schedule-Builder/build/vcpkg_installed/x64-linux/include -isystem /home/jevgome/Schedule-Builder/build/vcpkg_installed/x64-linux/include/libxml2 -isystem /home/jevgome/Schedule-Builder/build/vcpkg_installed/x64-linux/include/json-c
-  OBJECT_DIR = CMakeFiles/Schedule-Builder.dir
-  OBJECT_FILE_DIR = CMakeFiles/Schedule-Builder.dir/builder
 
 
 # =============================================================================
@@ -87,7 +66,7 @@ build CMakeFiles/Schedule-Builder.dir/builder/schedule.c.o: C_COMPILER__Schedule
 #############################################
 # Link the executable Schedule-Builder
 
-build Schedule-Builder: C_EXECUTABLE_LINKER__Schedule-Builder_ CMakeFiles/Schedule-Builder.dir/main.c.o CMakeFiles/Schedule-Builder.dir/input/input.c.o CMakeFiles/Schedule-Builder.dir/input/scraper.c.o CMakeFiles/Schedule-Builder.dir/builder/course.c.o CMakeFiles/Schedule-Builder.dir/builder/schedule.c.o | vcpkg_installed/x64-linux/debug/lib/libxml2.a vcpkg_installed/x64-linux/debug/lib/libjson-c.a vcpkg_installed/x64-linux/debug/lib/libcurl-d.a vcpkg_installed/x64-linux/lib/libssl.a vcpkg_installed/x64-linux/lib/libcrypto.a vcpkg_installed/x64-linux/lib/libz.a
+build Schedule-Builder: C_EXECUTABLE_LINKER__Schedule-Builder_ CMakeFiles/Schedule-Builder.dir/main.c.o CMakeFiles/Schedule-Builder.dir/input/scraper.c.o | vcpkg_installed/x64-linux/debug/lib/libxml2.a vcpkg_installed/x64-linux/debug/lib/libjson-c.a vcpkg_installed/x64-linux/debug/lib/libcurl-d.a vcpkg_installed/x64-linux/lib/libssl.a vcpkg_installed/x64-linux/lib/libcrypto.a vcpkg_installed/x64-linux/lib/libz.a
   LINK_LIBRARIES = vcpkg_installed/x64-linux/debug/lib/libxml2.a  vcpkg_installed/x64-linux/debug/lib/libjson-c.a  vcpkg_installed/x64-linux/debug/lib/libcurl-d.a  vcpkg_installed/x64-linux/lib/libssl.a  vcpkg_installed/x64-linux/lib/libcrypto.a  -ldl  vcpkg_installed/x64-linux/lib/libz.a  -lm
   OBJECT_DIR = CMakeFiles/Schedule-Builder.dir
   POST_BUILD = :
